@@ -38,9 +38,9 @@ public class Grade {
             gr[i].getGrades();
             
             if(gr[i].AVERAGE > 3.0){
-                passed++;
+                failed++;
             } else{
-                failed ++;
+                passed++;
             }
         }
         
