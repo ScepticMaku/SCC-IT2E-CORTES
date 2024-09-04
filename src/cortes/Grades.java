@@ -18,7 +18,7 @@ public class Grades {
         
         AVERAGE = (this.PRE+this.MID+this.PREFI+this.FIN)/4;
         String remarks = (AVERAGE > 3.0) ? "Failed" : "Passed";
-                
-        System.out.println(+this.S_ID+"   "+this.S_NAME+"    "+this.PRE+"    "+this.MID+"    "+this.PREFI+"   "+this.FIN+"    "+AVERAGE+"    "+remarks);
+        
+        System.out.printf("%-5d %-10s %-5.1f %-5.1f %-5.1f %-5.1f %-5.1f %s", S_ID, S_NAME, PRE, MID, PREFI, FIN, AVERAGE, remarks);
     }
 }

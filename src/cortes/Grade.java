@@ -6,6 +6,7 @@ public class Grade {
         Scanner sc = new Scanner(System.in);
         Grades[] gr = new Grades[100];
         
+        System.out.println("Running Grade program: \n");
         System.out.print("Enter no. of students: ");
         int snum = sc.nextInt();
         
@@ -32,6 +33,8 @@ public class Grade {
         int passed = 0;
         int failed = 0;
         
+        System.out.printf("\n%-5s %-10s %-5s %-5s %-5s %-5s %-5s %-5s\n", "ID", "Student", "Pre", "Mid", "Prefi", "Final", "Average", "Remarks");
+        
         for(int i = 0; i < snum; i++){
             gr[i].AVERAGE = (gr[i].PRE+gr[i].MID+gr[i].PREFI+gr[i].FIN)/4;
             TCA = TCA + gr[i].AVERAGE;
@@ -44,7 +47,7 @@ public class Grade {
             }
         }
         
-        System.out.println("--------------------------------------");
+        System.out.println("\n--------------------------------------");
         System.out.println("No. of students: "+snum);
         System.out.println("Total Class Average: "+TCA/snum);
         System.out.println("No. of Passed: "+passed);
