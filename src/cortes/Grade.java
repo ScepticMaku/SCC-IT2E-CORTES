@@ -47,11 +47,16 @@ public class Grade {
             }
         }
         
-        System.out.println("\n--------------------------------------");
+        /*System.out.println("\n--------------------------------------");
         System.out.println("No. of students: "+snum);
         System.out.println("Total Class Average: "+TCA/snum);
         System.out.println("No. of Passed: "+passed);
-        System.out.println("No. of Failed: "+failed);
+        System.out.println("No. of Failed: "+failed);*/
         
+        System.out.println("\n--------------------------------------"
+                + "\nNo. of students: "+snum
+                + "\nTotal class average: "+TCA/snum
+                + "\nNo. of passed: "+passed
+                + "\nNo. of failed: "+failed);
     }
 }

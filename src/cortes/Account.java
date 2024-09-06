@@ -17,7 +17,6 @@ public class Account {
             int ID = sc.nextInt();
             
             while(verifyID(ID,i)){
-                System.out.print("ID:");
                 ID = sc.nextInt();
             }
             
@@ -30,7 +29,6 @@ public class Account {
             String Eadd = sc.next();
             
             while(verifyEmail(Eadd, i)){
-                System.out.print("Email: ");
                 Eadd = sc.next();
             }
             
@@ -38,7 +36,6 @@ public class Account {
             String usern = sc.next();
             
             while(verifyUser(usern, i)){
-                System.out.print("Username: ");
                 usern = sc.next();
             }
             
@@ -112,7 +109,7 @@ public class Account {
     private boolean verifyID(int id, int max){
         for(int j = 0; j < max; j++){
             if(id==acs[j].aid){
-                System.out.println("Input invalid: must not have a duplicated ID, try again: ");
+                System.out.print("Input invalid: must not have a duplicated ID, try again: ");
                 return true;
             }
         }
@@ -122,7 +119,7 @@ public class Account {
     private boolean verifyEmail(String email, int max){
         for(int j = 0; j < max; j++){
             if(email.equals(acs[j].email)){
-                System.out.println("Input invalid: Must not have a duplicated email, try again: ");
+                System.out.print("Input invalid: Must not have a duplicated email, try again: ");
                 return true;
             }
         }
@@ -132,7 +129,7 @@ public class Account {
     private boolean verifyUser(String user, int max){
         for(int j = 0; j < max; j++){
             if(user.equals(acs[j].user)){
-                System.out.println("Input Invalid: Must not have a duplicated user, try again: ");
+                System.out.print("Input Invalid: Must not have a duplicated user, try again: ");
                 return true;
             }   
         }
