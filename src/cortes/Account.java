@@ -65,6 +65,7 @@ public class Account {
         }
     }
     
+    // <editor-fold defaultstate="collapsed" desc="Validation">
     private boolean passwordVerify(String password){
         if(!(password.length() > 8)){
             System.out.println("\nPassword is invalid, password must be above 8 characters");
@@ -134,6 +135,5 @@ public class Account {
             }   
         }
         return false;
-    }
-        
+    }// </editor-fold> 
 }
