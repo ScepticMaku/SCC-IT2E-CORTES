@@ -26,7 +26,6 @@ public class Cortes {
                 
         switch(select){
             case 1:
-                
                 pr.getProduct();
                 break;
             case 2:
