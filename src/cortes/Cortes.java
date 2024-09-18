@@ -19,10 +19,7 @@ public class Cortes {
                 + "\n3. Grades"
                 + "\n4. Accounts"
                 + "\nEnter selection: ");
-        int select = sc.nextInt();  
-        
-        System.out.print("\033[H\033[2J");
-                System.out.flush();
+        int select = sc.nextInt();
                 
         switch(select){
             case 1:
